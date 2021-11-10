@@ -16,7 +16,7 @@ header{
     width: 100%;
     
     height: 200px;
-    justify-content: space-between;
+    justify-content: flex-end;
     
 }
 
@@ -30,19 +30,14 @@ header{
     text-align: center;
     margin-bottom: 20px;
     font-size: 2em;
+    font-family: 'Press Start 2P', sans-serif;
 }
 
-.info-box {
-    color: white; 
-    margin: 20px;
-    font-size: 0.5em;
-
-}
 
 .main-guess {
     display:flex;
     height: 200px;
-    border-bottom: 3px solid white;
+    border-bottom: 20px solid white;
     color: white;
     justify-content: space-around;
     flex-direction: column;
@@ -63,7 +58,7 @@ header{
 .guess-container {
     display: flex;
     height: 200px;
-    justify-content: space-around
+    justify-content: flex-end;
 
 }
 
@@ -79,6 +74,7 @@ header{
     height: 50px;
     width: 200px;
     color: white;
+
 
 }
 
