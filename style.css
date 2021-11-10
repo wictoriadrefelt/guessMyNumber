@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body, html {
+    background-color: black;
+
+}
+
+header{
+    display: flex;
+    width: 100%;
+    border: 1px solid white;
+    height: 200px;
+    justify-content: space-between;
+    
+}
+
+.again{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    height: 100px;
+    width: 200px;
+    margin: 20px;
+    text-align: center;
+    
+    font-size: 2em;
+}
+
+.info-box {
+    color: white; 
+    margin: 20px;
+    font-size: 1.5em;
+
+}
+
+.main-guess {
+    display:flex;
+    height: 200px;
+    border-bottom: 3px solid white;
+    color: white;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    background-color: white;
+    color: black;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 2em;
+}
+
+.guess-container {
+    display: flex;
+    height: 200px;
+    border: 1px solid white; 
+    justify-content: space-around
+
+}
+
+.display{
+    height: 100px;
+    width: 200px;
+    border: 3px solid white;
+    
+
+}
+
+.start-guess{
+    height: 50px;
+    width: 200px;
+    color: white;
+
+}
+
+.content {
+    flex-direction: column;
+    display: flex;
+    height: 200px;
+    border: 1px solid white;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+
+.check-num {
+    height: 100px; 
+    width: 200px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 140px;
+    justify-content: center;
+
+}
+
+.check{
+    height: 50px; 
+    width: 100px;
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 140px;
+    justify-content: center;
+
+}
+
+.score, .highscore{
+    color: white; 
+    font-size: 20px;
+    
+
+}
+
+.highscore {
+    margin-right: 40px;
+}
