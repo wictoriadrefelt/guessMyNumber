@@ -26,10 +26,11 @@ let highscore = 0;
         document.body.style.backgroundColor = "green";
         document.querySelector('#highscore').textContent = score;
         document.querySelector('.question').textContent = numberToGuess;
-    // When guess is too high
-    }else if (guess > numberToGuess){
+    // When guess is wrong
+    }else if (guess != numberToGuess){
         if(score > 1){
-            getMessage('Guess is too high')
+            document.querySelector('.message').textContent = 
+            guess > numberToGuess ? 'Guess is too high!' : 'Guess is too low'
             score--;
             document.querySelector('#score').textContent = score;          
         }else{
@@ -37,17 +38,8 @@ let highscore = 0;
             document.querySelector('#score').textContent = 0;
             document.body.style.backgroundColor = "red";
         }
-    // When guess is too low
-    }else if(guess < numberToGuess){
-        if(score > 1){
-        getMessage('Guess is too low')
-        score--;
-        document.querySelector('#score').textContent = score;
-        }else{
-            getMessage('Game Over!')
-            document.querySelector('#score').textContent = 0;
-            document.body.style.backgroundColor = "red";
-        }
+    
+        
     }
 }); 
 
