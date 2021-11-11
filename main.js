@@ -48,7 +48,6 @@ let playAgain = document.querySelector('.again')
     playAgain.addEventListener('click', function(){
     document.querySelector('#score').textContent = 20;
     const numberToGuess = Math.trunc(Math.random() * 20) +1; 
-    console.log(numberToGuess)
     getMessage('Start guessing')
     document.body.style.backgroundColor = "black";
     document.querySelector('.guess').value = ''
